@@ -37,7 +37,7 @@
 .team-container{
     background-color: gray;
     display: grid;
-    
+    grid-template-columns: repeat(4,1fr);
     justify-content: space-around;
     padding: 10px;
     align-items: center;
