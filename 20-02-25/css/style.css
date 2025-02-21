@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .bannerimg{
+        width: 100%;
+        height: 25%;
+    }
+    h1{
+        text-align: center;
+    }
+    .flex-item{
+        background-color: gray;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: center;
+        border: 2px solid powderblue;
+        border-radius: 30px;
+        gap: 5px;
+    }
+    .flex{
+   
+        border: 2px solid greenyellow;
+        width: 300px;
+        /* height: 250px; */
+        /* height: 300px; */
+        text-align: center;
+        border-radius: 30px;
+        /* color: white; */
+        }
+
+.team-container{
+    background-color: gray;
+    display: grid;
+    
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    border: 2px solid powderblue;
+    border-radius: 30px;
+    gap: 5px;
+    
+}
+
+h1{
+    font-size: 50px;
+    background: linear-gradient(purple,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+}   
+
+.team-member{
+   
+border: 2px solid greenyellow;
+width: 300px;
+/* height: 250px; */
+/* height: 300px; */
+text-align: center;
+border-radius: 30px;
+/* color: white; */
+}
+
+.team-member h1{
+color: white;
+font-family: monospace;
+} 
+
+.team-member img{
+
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin: 20px;
+/* margin-bottom: 20px; */
+}
+
+.team-member-desc{
+
+color: white;
+text-align: justify;
+text-indent: 50px;
+/* margin: 15px; */
+padding: 5px;
+/* width: 300px; */
+
+}
+.team-member h1{
+font-size: 16px; 
+ margin-bottom: 20px;
+}
+ body{
+    background-color: gray;
+ }
+@media(max-width:1024px){
+    .team-container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media(max-width:768px){
+    .team-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(max-width:468px){
+    .team-container{
+        grid-template-columns: repeat(1fr);
+    }
+}
+  
+  .content {
+    font-size:24px;
+    gap: 100px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align:center;
+    margin-left:10px;
+    margin-top:22px;
+    color:black
+  }
+  
+  
+  @media (max-width:768px) {
+    .content{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media (max-width:468px) {
+    .content {
+      grid-template-columns: repeat(1fr);
+    }
+  }
+  
