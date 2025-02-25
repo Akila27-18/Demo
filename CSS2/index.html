@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlexBOx-order</title>
+  
+</head>
+<h1>Build a complex layout using Flexbox with multiple rows and columns.</h1>
+<style>
+    
+*{
+  margin: 0;
+  padding: 0;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.container1{
+  border:5px solid black;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  
+  
+}
+.container{
+  border:5px solid black;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  
+
+}
+.col{
+  display: flex;
+}
+
+.flex-item{
+  color:white;
+   font-size: 18px;
+  padding: 16px;
+  text-align: center;
+}
+.box-1{background: linear-gradient(black,grey,red);
+        }
+        .box-2{background: linear-gradient(black,grey,yellow);
+        }
+        .box-3{background: linear-gradient(black,grey,blue);
+        }
+        .box-4{background: linear-gradient(black,grey,orange);
+        }
+        .box-5{background: linear-gradient(black,grey,purple);
+        }
+        .box-6{background: linear-gradient(black,grey,green);
+        }
+        .box-7{background: linear-gradient(black,rgb(199, 62, 62),white);
+        }
+        .box-8{background: linear-gradient(black,grey,violet);
+        }
+        .box-9{background: linear-gradient(black,grey,greenyellow);
+        }
+        .box-10{background: linear-gradient(black,grey,cyan);
+        }
+        .box-11{background: linear-gradient(black,grey,orangered);
+        }
+        .box-12{background: linear-gradient(black,pink);
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="flex-item box-1">Janurary</div>
+        <div class="flex-item box-2">February</div>
+        <div class="flex-item box-3">March</div>
+        <div class="flex-item box-4">April</div>
+        <div class="flex-item box-5">May</div>
+        <div class="flex-item box-6">June</div>
+        <div class="flex-item box-7">July</div>
+        <div class="flex-item box-8">August</div>
+        <div class="flex-item box-9">September</div>
+        <div class="flex-item box-10">October</div>
+        <div class="flex-item box-11">November</div>
+        <div class="flex-item box-12">December</div>
+      </div>
+      <div class="col">
+      <div class="container1">
+        <div class="flex-item box-1">1</div>
+        <div class="flex-item box-2">2</div>
+        <div class="flex-item box-3">3</div>
+        <div class="flex-item box-4">4</div>
+        <div class="flex-item box-5">5</div>
+        <div class="flex-item box-6">6</div>
+        <div class="flex-item box-7">7</div>
+        <div class="flex-item box-8">8</div>
+        <div class="flex-item box-9">9</div>
+        <div class="flex-item box-10">10</div>
+        <div class="flex-item box-11">11</div>
+        <div class="flex-item box-12">12</div>
+        <div class="flex-item box-1">13</div>
+        <div class="flex-item box-2">14</div>
+        <div class="flex-item box-3">15</div>
+        <div class="flex-item box-4">16</div>
+        <div class="flex-item box-5">17</div>
+        <div class="flex-item box-6">18</div>
+        <div class="flex-item box-7">19</div>
+        <div class="flex-item box-8">20</div>
+        <div class="flex-item box-9">21</div>
+        <div class="flex-item box-10">22</div>
+        <div class="flex-item box-11">23</div>
+        <div class="flex-item box-12">24</div>
+        <div class="flex-item box-1">25</div>
+        <div class="flex-item box-2">26</div>
+        <div class="flex-item box-3">27</div>
+        <div class="flex-item box-4">28</div>
+        <div class="flex-item box-5">29</div>
+        <div class="flex-item box-6">30</div>
+        <div class="flex-item box-7">31</div>
+            </div>
+        <div class="container1">
+        <div class="flex-item box-1">1</div>
+        <div class="flex-item box-2">2</div>
+        <div class="flex-item box-3">3</div>
+        <div class="flex-item box-4">4</div>
+        <div class="flex-item box-5">5</div>
+        <div class="flex-item box-6">6</div>
+        <div class="flex-item box-7">7</div>
+        <div class="flex-item box-8">8</div>
+        <div class="flex-item box-9">9</div>
+        <div class="flex-item box-10">10</div>
+        <div class="flex-item box-11">11</div>
+        <div class="flex-item box-12">12</div>
+        <div class="flex-item box-1">13</div>
+        <div class="flex-item box-2">14</div>
+        <div class="flex-item box-3">15</div>
+        <div class="flex-item box-4">16</div>
+        <div class="flex-item box-5">17</div>
+        <div class="flex-item box-6">18</div>
+        <div class="flex-item box-7">19</div>
+        <div class="flex-item box-8">20</div>
+        <div class="flex-item box-9">21</div>
+        <div class="flex-item box-10">22</div>
+        <div class="flex-item box-11">23</div>
+        <div class="flex-item box-12">24</div>
+        <div class="flex-item box-1">25</div>
+        <div class="flex-item box-2">26</div>
+        <div class="flex-item box-3">27</div>
+        <div class="flex-item box-4">28</div>
+     
+            </div>
+            <div class="container1">
+              <div class="flex-item box-1">1</div>
+              <div class="flex-item box-2">2</div>
+              <div class="flex-item box-3">3</div>
+              <div class="flex-item box-4">4</div>
+              <div class="flex-item box-5">5</div>
+              <div class="flex-item box-6">6</div>
+              <div class="flex-item box-7">7</div>
+              <div class="flex-item box-8">8</div>
+              <div class="flex-item box-9">9</div>
+              <div class="flex-item box-10">10</div>
+              <div class="flex-item box-11">11</div>
+              <div class="flex-item box-12">12</div>
+              <div class="flex-item box-1">13</div>
+              <div class="flex-item box-2">14</div>
+              <div class="flex-item box-3">15</div>
+              <div class="flex-item box-4">16</div>
+              <div class="flex-item box-5">17</div>
+              <div class="flex-item box-6">18</div>
+              <div class="flex-item box-7">19</div>
+              <div class="flex-item box-8">20</div>
+              <div class="flex-item box-9">21</div>
+              <div class="flex-item box-10">22</div>
+              <div class="flex-item box-11">23</div>
+              <div class="flex-item box-12">24</div>
+              <div class="flex-item box-1">25</div>
+              <div class="flex-item box-2">26</div>
+              <div class="flex-item box-3">27</div>
+              <div class="flex-item box-4">28</div>
+              <div class="flex-item box-5">29</div>
+              <div class="flex-item box-6">30</div>
+              <div class="flex-item box-7">31</div>
+                  </div>
+                  <div class="container1">
+                    <div class="flex-item box-1">1</div>
+                    <div class="flex-item box-2">2</div>
+                    <div class="flex-item box-3">3</div>
+                    <div class="flex-item box-4">4</div>
+                    <div class="flex-item box-5">5</div>
+                    <div class="flex-item box-6">6</div>
+                    <div class="flex-item box-7">7</div>
+                    <div class="flex-item box-8">8</div>
+                    <div class="flex-item box-9">9</div>
+                    <div class="flex-item box-10">10</div>
+                    <div class="flex-item box-11">11</div>
+                    <div class="flex-item box-12">12</div>
+                    <div class="flex-item box-1">13</div>
+                    <div class="flex-item box-2">14</div>
+                    <div class="flex-item box-3">15</div>
+                    <div class="flex-item box-4">16</div>
+                    <div class="flex-item box-5">17</div>
+                    <div class="flex-item box-6">18</div>
+                    <div class="flex-item box-7">19</div>
+                    <div class="flex-item box-8">20</div>
+                    <div class="flex-item box-9">21</div>
+                    <div class="flex-item box-10">22</div>
+                    <div class="flex-item box-11">23</div>
+                    <div class="flex-item box-12">24</div>
+                    <div class="flex-item box-1">25</div>
+                    <div class="flex-item box-2">26</div>
+                    <div class="flex-item box-3">27</div>
+                    <div class="flex-item box-4">28</div>
+                    <div class="flex-item box-5">29</div>
+                    <div class="flex-item box-6">30</div>
+                    <div class="flex-item box-7">31</div>
+                        </div>
+                        <div class="container1">
+                          <div class="flex-item box-1">1</div>
+                          <div class="flex-item box-2">2</div>
+                          <div class="flex-item box-3">3</div>
+                          <div class="flex-item box-4">4</div>
+                          <div class="flex-item box-5">5</div>
+                          <div class="flex-item box-6">6</div>
+                          <div class="flex-item box-7">7</div>
+                          <div class="flex-item box-8">8</div>
+                          <div class="flex-item box-9">9</div>
+                          <div class="flex-item box-10">10</div>
+                          <div class="flex-item box-11">11</div>
+                          <div class="flex-item box-12">12</div>
+                          <div class="flex-item box-1">13</div>
+                          <div class="flex-item box-2">14</div>
+                          <div class="flex-item box-3">15</div>
+                          <div class="flex-item box-4">16</div>
+                          <div class="flex-item box-5">17</div>
+                          <div class="flex-item box-6">18</div>
+                          <div class="flex-item box-7">19</div>
+                          <div class="flex-item box-8">20</div>
+                          <div class="flex-item box-9">21</div>
+                          <div class="flex-item box-10">22</div>
+                          <div class="flex-item box-11">23</div>
+                          <div class="flex-item box-12">24</div>
+                          <div class="flex-item box-1">25</div>
+                          <div class="flex-item box-2">26</div>
+                          <div class="flex-item box-3">27</div>
+                          <div class="flex-item box-4">28</div>
+                          <div class="flex-item box-5">29</div>
+                          <div class="flex-item box-6">30</div>
+                              </div>
+                              <div class="container1">
+                                <div class="flex-item box-1">1</div>
+                                <div class="flex-item box-2">2</div>
+                                <div class="flex-item box-3">3</div>
+                                <div class="flex-item box-4">4</div>
+                                <div class="flex-item box-5">5</div>
+                                <div class="flex-item box-6">6</div>
+                                <div class="flex-item box-7">7</div>
+                                <div class="flex-item box-8">8</div>
+                                <div class="flex-item box-9">9</div>
+                                <div class="flex-item box-10">10</div>
+                                <div class="flex-item box-11">11</div>
+                                <div class="flex-item box-12">12</div>
+                                <div class="flex-item box-1">13</div>
+                                <div class="flex-item box-2">14</div>
+                                <div class="flex-item box-3">15</div>
+                                <div class="flex-item box-4">16</div>
+                                <div class="flex-item box-5">17</div>
+                                <div class="flex-item box-6">18</div>
+                                <div class="flex-item box-7">19</div>
+                                <div class="flex-item box-8">20</div>
+                                <div class="flex-item box-9">21</div>
+                                <div class="flex-item box-10">22</div>
+                                <div class="flex-item box-11">23</div>
+                                <div class="flex-item box-12">24</div>
+                                <div class="flex-item box-1">25</div>
+                                <div class="flex-item box-2">26</div>
+                                <div class="flex-item box-3">27</div>
+                                <div class="flex-item box-4">28</div>
+                                <div class="flex-item box-5">29</div>
+                                <div class="flex-item box-6">30</div>
+                                <div class="flex-item box-7">31</div>
+                                    </div>
+                                    <div class="container1">
+                                      <div class="flex-item box-1">1</div>
+                                      <div class="flex-item box-2">2</div>
+                                      <div class="flex-item box-3">3</div>
+                                      <div class="flex-item box-4">4</div>
+                                      <div class="flex-item box-5">5</div>
+                                      <div class="flex-item box-6">6</div>
+                                      <div class="flex-item box-7">7</div>
+                                      <div class="flex-item box-8">8</div>
+                                      <div class="flex-item box-9">9</div>
+                                      <div class="flex-item box-10">10</div>
+                                      <div class="flex-item box-11">11</div>
+                                      <div class="flex-item box-12">12</div>
+                                      <div class="flex-item box-1">13</div>
+                                      <div class="flex-item box-2">14</div>
+                                      <div class="flex-item box-3">15</div>
+                                      <div class="flex-item box-4">16</div>
+                                      <div class="flex-item box-5">17</div>
+                                      <div class="flex-item box-6">18</div>
+                                      <div class="flex-item box-7">19</div>
+                                      <div class="flex-item box-8">20</div>
+                                      <div class="flex-item box-9">21</div>
+                                      <div class="flex-item box-10">22</div>
+                                      <div class="flex-item box-11">23</div>
+                                      <div class="flex-item box-12">24</div>
+                                      <div class="flex-item box-1">25</div>
+                                      <div class="flex-item box-2">26</div>
+                                      <div class="flex-item box-3">27</div>
+                                      <div class="flex-item box-4">28</div>
+                                      <div class="flex-item box-5">29</div>
+                                      <div class="flex-item box-6">30</div>
+                                          </div>
+                                          <div class="container1">
+                                            <div class="flex-item box-1">1</div>
+                                            <div class="flex-item box-2">2</div>
+                                            <div class="flex-item box-3">3</div>
+                                            <div class="flex-item box-4">4</div>
+                                            <div class="flex-item box-5">5</div>
+                                            <div class="flex-item box-6">6</div>
+                                            <div class="flex-item box-7">7</div>
+                                            <div class="flex-item box-8">8</div>
+                                            <div class="flex-item box-9">9</div>
+                                            <div class="flex-item box-10">10</div>
+                                            <div class="flex-item box-11">11</div>
+                                            <div class="flex-item box-12">12</div>
+                                            <div class="flex-item box-1">13</div>
+                                            <div class="flex-item box-2">14</div>
+                                            <div class="flex-item box-3">15</div>
+                                            <div class="flex-item box-4">16</div>
+                                            <div class="flex-item box-5">17</div>
+                                            <div class="flex-item box-6">18</div>
+                                            <div class="flex-item box-7">19</div>
+                                            <div class="flex-item box-8">20</div>
+                                            <div class="flex-item box-9">21</div>
+                                            <div class="flex-item box-10">22</div>
+                                            <div class="flex-item box-11">23</div>
+                                            <div class="flex-item box-12">24</div>
+                                            <div class="flex-item box-1">25</div>
+                                            <div class="flex-item box-2">26</div>
+                                            <div class="flex-item box-3">27</div>
+                                            <div class="flex-item box-4">28</div>
+                                            <div class="flex-item box-5">29</div>
+                                            <div class="flex-item box-6">30</div>
+                                            <div class="flex-item box-7">31</div>
+                                                </div>
+                                                <div class="container1">
+                                                  <div class="flex-item box-1">1</div>
+                                                  <div class="flex-item box-2">2</div>
+                                                  <div class="flex-item box-3">3</div>
+                                                  <div class="flex-item box-4">4</div>
+                                                  <div class="flex-item box-5">5</div>
+                                                  <div class="flex-item box-6">6</div>
+                                                  <div class="flex-item box-7">7</div>
+                                                  <div class="flex-item box-8">8</div>
+                                                  <div class="flex-item box-9">9</div>
+                                                  <div class="flex-item box-10">10</div>
+                                                  <div class="flex-item box-11">11</div>
+                                                  <div class="flex-item box-12">12</div>
+                                                  <div class="flex-item box-1">13</div>
+                                                  <div class="flex-item box-2">14</div>
+                                                  <div class="flex-item box-3">15</div>
+                                                  <div class="flex-item box-4">16</div>
+                                                  <div class="flex-item box-5">17</div>
+                                                  <div class="flex-item box-6">18</div>
+                                                  <div class="flex-item box-7">19</div>
+                                                  <div class="flex-item box-8">20</div>
+                                                  <div class="flex-item box-9">21</div>
+                                                  <div class="flex-item box-10">22</div>
+                                                  <div class="flex-item box-11">23</div>
+                                                  <div class="flex-item box-12">24</div>
+                                                  <div class="flex-item box-1">25</div>
+                                                  <div class="flex-item box-2">26</div>
+                                                  <div class="flex-item box-3">27</div>
+                                                  <div class="flex-item box-4">28</div>
+                                                  <div class="flex-item box-5">29</div>
+                                                  <div class="flex-item box-6">30</div>
+                                                  <div class="flex-item box-7">31</div>
+                                                      </div>
+                                                      <div class="container1">
+                                                        <div class="flex-item box-1">1</div>
+                                                        <div class="flex-item box-2">2</div>
+                                                        <div class="flex-item box-3">3</div>
+                                                        <div class="flex-item box-4">4</div>
+                                                        <div class="flex-item box-5">5</div>
+                                                        <div class="flex-item box-6">6</div>
+                                                        <div class="flex-item box-7">7</div>
+                                                        <div class="flex-item box-8">8</div>
+                                                        <div class="flex-item box-9">9</div>
+                                                        <div class="flex-item box-10">10</div>
+                                                        <div class="flex-item box-11">11</div>
+                                                        <div class="flex-item box-12">12</div>
+                                                        <div class="flex-item box-1">13</div>
+                                                        <div class="flex-item box-2">14</div>
+                                                        <div class="flex-item box-3">15</div>
+                                                        <div class="flex-item box-4">16</div>
+                                                        <div class="flex-item box-5">17</div>
+                                                        <div class="flex-item box-6">18</div>
+                                                        <div class="flex-item box-7">19</div>
+                                                        <div class="flex-item box-8">20</div>
+                                                        <div class="flex-item box-9">21</div>
+                                                        <div class="flex-item box-10">22</div>
+                                                        <div class="flex-item box-11">23</div>
+                                                        <div class="flex-item box-12">24</div>
+                                                        <div class="flex-item box-1">25</div>
+                                                        <div class="flex-item box-2">26</div>
+                                                        <div class="flex-item box-3">27</div>
+                                                        <div class="flex-item box-4">28</div>
+                                                        <div class="flex-item box-5">29</div>
+                                                        <div class="flex-item box-6">30</div>
+                                                            </div><div class="container1">
+                                                              <div class="flex-item box-1">1</div>
+                                                              <div class="flex-item box-2">2</div>
+                                                              <div class="flex-item box-3">3</div>
+                                                              <div class="flex-item box-4">4</div>
+                                                              <div class="flex-item box-5">5</div>
+                                                              <div class="flex-item box-6">6</div>
+                                                              <div class="flex-item box-7">7</div>
+                                                              <div class="flex-item box-8">8</div>
+                                                              <div class="flex-item box-9">9</div>
+                                                              <div class="flex-item box-10">10</div>
+                                                              <div class="flex-item box-11">11</div>
+                                                              <div class="flex-item box-12">12</div>
+                                                              <div class="flex-item box-1">13</div>
+                                                              <div class="flex-item box-2">14</div>
+                                                              <div class="flex-item box-3">15</div>
+                                                              <div class="flex-item box-4">16</div>
+                                                              <div class="flex-item box-5">17</div>
+                                                              <div class="flex-item box-6">18</div>
+                                                              <div class="flex-item box-7">19</div>
+                                                              <div class="flex-item box-8">20</div>
+                                                              <div class="flex-item box-9">21</div>
+                                                              <div class="flex-item box-10">22</div>
+                                                              <div class="flex-item box-11">23</div>
+                                                              <div class="flex-item box-12">24</div>
+                                                              <div class="flex-item box-1">25</div>
+                                                              <div class="flex-item box-2">26</div>
+                                                              <div class="flex-item box-3">27</div>
+                                                              <div class="flex-item box-4">28</div>
+                                                              <div class="flex-item box-5">29</div>
+                                                              <div class="flex-item box-6">30</div>
+                                                                  </div>
+                                                                  <div class="container1">
+                                                                    <div class="flex-item box-1">1</div>
+                                                                    <div class="flex-item box-2">2</div>
+                                                                    <div class="flex-item box-3">3</div>
+                                                                    <div class="flex-item box-4">4</div>
+                                                                    <div class="flex-item box-5">5</div>
+                                                                    <div class="flex-item box-6">6</div>
+                                                                    <div class="flex-item box-7">7</div>
+                                                                    <div class="flex-item box-8">8</div>
+                                                                    <div class="flex-item box-9">9</div>
+                                                                    <div class="flex-item box-10">10</div>
+                                                                    <div class="flex-item box-11">11</div>
+                                                                    <div class="flex-item box-12">12</div>
+                                                                    <div class="flex-item box-1">13</div>
+                                                                    <div class="flex-item box-2">14</div>
+                                                                    <div class="flex-item box-3">15</div>
+                                                                    <div class="flex-item box-4">16</div>
+                                                                    <div class="flex-item box-5">17</div>
+                                                                    <div class="flex-item box-6">18</div>
+                                                                    <div class="flex-item box-7">19</div>
+                                                                    <div class="flex-item box-8">20</div>
+                                                                    <div class="flex-item box-9">21</div>
+                                                                    <div class="flex-item box-10">22</div>
+                                                                    <div class="flex-item box-11">23</div>
+                                                                    <div class="flex-item box-12">24</div>
+                                                                    <div class="flex-item box-1">25</div>
+                                                                    <div class="flex-item box-2">26</div>
+                                                                    <div class="flex-item box-3">27</div>
+                                                                    <div class="flex-item box-4">28</div>
+                                                                    <div class="flex-item box-5">29</div>
+                                                                    <div class="flex-item box-6">30</div>
+                                                                    <div class="flex-item box-7">31</div>
+                                                                        </div>
+
+      </div>
+     
+    </body>
+    
+    </html>
+    
