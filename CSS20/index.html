@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+/* Body style */
+body{
+    background-color:rgb(207, 204, 204);
+    font-family:cursive;
+}
+/* Header style */
+header h1{
+    background-color: plum;
+    text-align: center;
+    border: 2px solid darkmagenta;
+    color:purple;
+    text-shadow: 2px 2px black;
+    font-size: 50px;
+  }
+  header{
+    background-image: url('Image\event.jpg');
+    background-attachment: fixed;
+  background-size: cover;
+    border: 2px solid darkmagenta;
+  }
+header img{
+    background-color: paleturquoise;
+    border: 2px solid darkorchid;
+    border-radius: 10px;
+}
+/* Nav bar list styles */
+    nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 20px;
+        text-decoration: none;
+        border: 2px solid purple;
+        padding: 5px;
+        }
+        nav ul li {
+            list-style-type: none;
+            text-align: center;
+            align-content: center;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: purple;
+            font-size: 30px;
+            text-shadow: 2px 2px black;
+        }
+        nav ul li i{
+            font-size: 30px;
+        }
+#Gallery{
+    background-color: plum;
+    font-style: italic;
+    color: darkblue;
+    border: 2px solid purple;
+   padding: 10px;
+   text-shadow: 1px 1px black;
+   font-size: 20px;
+}
+#Gallery figure{
+    display:flex;
+    justify-content: space-around;
+}
+#Gallery figure img{
+    border: 2px solid darkorchid;
+    border-radius: 10px;
+    padding: 10px;    
+}
+#Gallery figcaption{
+    align-content:center;
+}
+#Events{
+    justify-items: center;
+    background-color: grey;
+    border: 2px solid darkmagenta;    
+}
+#Events ul li{
+    list-style-type: none;
+}
+
+#Events ul li i{
+    font-size: 40px;
+    /* text-decoration: none; */
+}
+#Events h2{
+    font-size: 25px;
+    color: darkmagenta;
+    text-shadow: 2px 2px black;
+}
+#Events ul :nth-child(even){
+    color:chartreuse;
+}
+#Events ul :nth-child(odd){
+    color:cyan;
+}
+#Testimonals{
+    font-size: 25px;
+    background-color: grey;
+    border: 2px solid purple;
+    color: darkmagenta;
+    padding: 20px;
+    text-shadow: 2px 2px black;
+}
+#Testimonals p{
+    color: pink;
+    font-size: 20px;
+    border: 2px dotted pink;
+    border-radius: 10px;
+    background-color: black; 
+    text-shadow: 1px 1px lavender;
+}
+
+#contact{
+    color: darkmagenta;
+    background-color: plum;
+    border: 2px double darkviolet;
+    justify-items: center;
+    text-shadow: 2px 2px greenyellow;
+    font-size: 25px;
+}
+#map{
+    border: 2px double darkmagenta;
+    
+}
+#icons{
+    position:sticky;
+    bottom: 20px;
+    cursor: grab;
+    right: 50px;
+}
+header h1:hover{
+    color: orange;
+}
+li a:hover{
+    color: yellowgreen;
+}
+</style>
+<body>
+    <header><marquee><img src="Image/gal6.jpg" width="1250" height="200"></marquee>
+        <header><marquee><h1><i>Event Planners</i></h1></marquee>
+
+        <nav>
+        <ul>
+            <li><i class='bx bx-cog bx-spin' style='color:rgba(74, 28, 214, 0.69)' ></i><a href="#Services">Services</a></li>
+            <li><i class='bx bx-images bx-tada' style='color:rgba(206,60,111,0.69)' ></i><a href="#Gallery">Gallery</a></li>
+            <li><i class='bx bxs-party bx-flashing' style='color:rgba(121,9,113,0.69)' ></i><a href="#Testimonal">Testimonals</a></li>
+            <li><i class='bx bxs-user-voice bx-fade-left' style='color:rgba(14, 94, 42, 0.69)' ></i><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div>
+    <section id="Events">
+        <marquee><h2>Event Types We Organize</h2></marquee>
+        <ul>
+            <li><i class='bx bxs-party bx-spin' style='color:rgba(37,14,151,0.69)' ></i> Weddings</li>
+            <li><i class='bx bxs-store-alt bx-spin' style='color:rgba(225,34,201,0.69)' ></i> Corporate Events</li>
+            <li><i class='bx bxs-baby-carriage bx-fade-left' style='color:rgba(10,33,189,0.69)'  ></i> Birthday Parties</li>
+            <li><i class='bx bxs-radio bx-spin' style='color:rgba(188,11,192,0.69)' ></i> Concerts and Festivals</li>
+            <li><i class='bx bxs-happy-heart-eyes bx-tada' style='color:rgba(249,5,35,0.69)' ></i> Private Gatherings</li>
+        </ul>
+    </section>
+<section id="Gallery">
+    <h2>Photo Gallery</h2>
+    <figure>
+    <img src="Image/gal7.jpg" width="200" height="200">
+    <figcaption>Wedding Event</figcaption>    
+    <img src="Image/gal1.jpg" width="200" height="200">
+    <figcaption>Corporate Conference</figcaption>
+    <img src="Image/gal2.jpg" width="200" height="200">
+    <figcaption>Birthday Party</figcaption>
+    <img src="Image/gal4.jpg" width="200" height="200">
+     <figcaption>Festival Concert</figcaption>   
+</figure>
+
+</section>
+
+<section id="Testimonals">
+    <h2>What Our Clients Say</h2>
+    <br>
+<p><i><b>"Elite Event Planners made our wedding a dream come true! Highly Recommended!" - Anna & John</b></i> </p>
+<br>
+<p><i><b>"Our Corporate gala was a grand success, thanks to the amazing team!" - Mark T.</b></i></p>
+</section>
+<section id="icons">
+    <i class='bx bxl-facebook-circle' style="color: blue;font-size: 50px;"></i>
+    <br>
+    <i class='bx bxl-instagram' style="color: red;font-size: 50px;"></i>
+    <br>
+    <i class='bx bxl-twitter' style="color:blue;font-size: 50px;"></i>
+    <br>
+    <i class='bx bxl-whatsapp' style="color: darkgreen; font-size: 50px;"></i>
+</section>
+<section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248756.07885882704!2d80.20867324999999!3d13.04752545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1739031868179!5m2!1sen!2sin" width="1260" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <br>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <h6><i class='bx bxs-phone' style="color: orangered; font-size: 30px;"></i><b>Phone:</b> +1 234 567 890</h6>
+    <h6><i class='bx bx-envelope' style="color: blueviolet;font-size: 30px;"  ></i><b>Email:</b> contact@vts.com</h6>
+    <h6><img src="Image/addr.png" width="30"><b>Address:</b> Shanthi complex, Surandai</h6>
+</section>
+</div>
+<footer>
+    <p>© 2025 Vetri Technology Solutions | All Rights Reserved</p>
+</footer>
+</body>
+</html>
