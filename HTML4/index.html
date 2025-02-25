@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Student form</title>
+    </head>
+        <body style="border: 2px dotted black; background-color: beige;margin: 10px; padding: 20px;">
+            <center><h1> Student Registration Form </h1></center>
+        <center> <h3> Register For Your Favourite Course today!</h3></center>
+    <form>  
+    <fieldset> 
+     <legend><h1>Fill In Your Details</h1></legend>   
+
+     <!-- Full Name -->
+     <label for="name">Full Name:</label>
+     <input type="text" id="name" name="name" required placeholder="Enter your full name">
+     <br><br>
+     <!-- Email -->
+     <label for="email">Email:</label>
+     <input type="url" id="email" name="email" required placeholder="Enter a valid email">
+     <br><br>
+     <!-- Phone Number (Pattern: XXX-XXX-XXXX) -->
+     <label for="phone">Phone Number:</label>
+     <input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" required placeholder="Format: 123-456-7890" title="Phone number must be in the format: 123-456-7890">
+     <br><br>
+     <!--DOB Field-->
+     <label for="dob">Date of Birth:</label>
+     <input type="date" id="dob" name="dob">
+     <br><br>
+     <!--Select Field-->
+     <label>Select your course:</label>
+     <select name="Course" id="Course">
+        <option value="Select">Java</option>
+        <option value="Select">Python</option>
+        <br>
+        <br></select>
+    <!-- Radio Field-->
+     <br>
+    <label>Gender:</label>
+    <input type="radio" id="Male" name="Gender" value="Male">
+    <label for="Male">Male</label>
+    <input type="radio" id="Female" name="Gender" value="Female">
+    <label for="Female">Female</label>
+    <input type="radio" id="Other" name="Other" value="Other">
+    <label for="Other">Other</label>
+    <Br></Br>
+    <!--Text Area-->
+    <label>Address:</label>
+    <textarea></textarea>
+    <br><br>
+    <!--File Field-->
+    <label for="profilepic">Upload profile picture</label>
+    <input type="file" id="profilepic" name="profilepic" required>
+    <br><br>
+     <!--Form Action-->
+     <form action="sample.html"method="post"></form>
+     <button type="submit"value="submit">Enroll Now</button>
+    </fieldset>
+    </body>
+
+</html>
+</form>
