@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Application Form</title>
+</head>
+<body>
+<header>
+<h1>Apply now for exciting career opportunities!</h1>
+</header>
+<main>
+    <fieldset>
+        <legend><h1>Job Application Form</h1></legend>
+<form>
+<!-- Full Name -->
+<label for="name">Full Name:</label>
+<input type="text" id="name" name="name" required placeholder="Enter your full name">
+<br><br>
+<!-- Email -->
+<label for="email">Email:</label>
+<input type="url" id="email" name="email" required placeholder="Enter a valid email">
+<br><br>
+<!-- Phone Number (Pattern: XXX-XXX-XXXX) -->
+<label for="phone">Phone Number:</label>
+<input type="tel" id="phone" name="phone" pattern="\d{3}-\d{3}-\d{4}" required placeholder="Format: 123-456-7890" title="Phone number must be in the format: 123-456-7890">
+<br><br>
+<!-- Resume Upload -->
+<label for="resume">Upload Resume:</label>
+<input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+<br><br>
+<!-- Submit Button -->
+<button type="submit">Submit Application</button>
+</form>
+    </fieldset>
+</main>
+<footer>
+<p>© 2025 Career Portal | All Rights Reserved</p>
+</footer>
+</body>
+</html>
