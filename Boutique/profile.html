@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<style>
+    .box{
+        margin: 10px; 
+        padding: 120px;
+    }
+    .card{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+       text-align: center;
+       justify-content: space-around;  
+    }
+    button{
+    color: white;
+    width: 200px;
+    background-color:rgb(244, 33, 110);
+    border: none; 
+    padding: 10px; 
+    font-size: 25px; 
+    border-radius: 20px;
+  }
+  </style>
+<body>
+    <div class="box">
+        <div class="card">
+        <img src="Image/login.png" width="500px" height="500px">
+        <div class="card">
+<form style="background-color: rgb(247, 212, 241); color:black; width: 500px; height: 500px;"> 
+    <h1 style="text-align: center;">LOG IN</h1>  
+            <!--Email Field-->
+    <label for = "email"><h1>Email:</h1></label>
+    <input type="email"id="email"name="email"placeholder="Enter your Email">
+    <!--Password Field-->
+    <label><h1>Password:</h1></label>
+    <input type ="password"id="password"name="password"required>
+    <br>
+    <br>
+    <br>
+    <span><a href="forgot.html">Forgot Password?</a></span>
+    <br>
+    <br>
+    <br>
+    <button type="submit"value="submit">Sign In</button>
+    <br>
+    <br>
+    <span><a href="account.html">Create Account</a></span>
+
+    </form>
+       
+    </div>
+    </div>
+</body>
+</html>

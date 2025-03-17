@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .checkout-section {
+            flex: 2;
+            padding-right: 20px;
+        }
+        .order-summary {
+            flex: 1;
+            text-align: center;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        .address-box {
+            background: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .promo-code {
+            margin: 10px 0;
+        }
+        .promo-code input {
+            padding: 8px;
+            width: 70%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .promo-code button {
+            padding: 8px 10px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+        }
+        .payment-options label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+        .payment-options img {
+            width: 40px;
+            margin-left: 10px;
+        }
+        .order-summary img {
+            width: 100px;
+            border-radius: 5px;
+        }
+        .item-title {
+            font-weight: bold;
+            color: #d63384;
+        }
+        .item-price {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="checkout-section">
+            <h2>Delivery Address</h2>
+            <div class="address-box">
+                <p>Door no:65, xyz Street, abc State,<br> India <br> 622303</p>
+            </div>
+            
+            <hr>
+            
+            <h2>Payment Method</h2>
+            <div class="promo-code">
+                <input type="text" id="promoInput" placeholder="Enter Code">
+                <button onclick="applyPromo()">Apply</button>
+            </div>
+            
+            <div class="payment-options">
+                <label><input type="radio" name="payment" value="card"> Credit or Debit Card <img src="Image/card.png" alt="Card"></label>
+                <label><input type="radio" name="payment" value="paypal"> Paypal <img src="Image/paypal.png" alt="Paypal"></label>
+                <label><input type="radio" name="payment" value="gpay"> Gpay <img src="Image/gpay.png" alt="Gpay"></label>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <img src="Image/fav.png" alt="Silk Saree">
+            <p class="item-title">Orange with Purple Border silk saree</p>
+            <p class="item-price">Item: Silk Saree<br>Rs. 3999</p>
+        </div>
+    </div>
+    
+    <script>
+        function applyPromo() {
+            let promoCode = document.getElementById('promoInput').value;
+            if (promoCode === "DISCOUNT10") {
+                alert("Promo code applied! 10% discount added.");
+            } else {
+                alert("Invalid promo code.");
+            }
+        }
+    </script>
+</body>
+</html>

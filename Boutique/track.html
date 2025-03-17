@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Track</title>
+</head>
+<style>
+    .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    background-color:rgb(240, 196, 219);
+    color:black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    /* bottom: 125%;
+    left: 50%; */
+   
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    /* bottom: 100%;
+    left: 50%; */
+   
+    border-width: 5px;
+    border-style: solid;
+    border-color:deeppink transparent transparent transparent;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+</style>
+<body>
+    <script>
+        // When the user clicks on <div>, open the popup
+        function myFunction() {
+          var popup = document.getElementById("track.html");
+          popup.classList.toggle("show");
+        }
+        </script>
+
+<div class="track.html" onclick="myFunction()">
+    
+    <span class="track" id="track.html">
+       
+    
+   
+<form style="border: 1px solid; background-color: rgb(247, 225, 238);margin: 10px; padding: 20px; color: black; width: 300px; height: 300px; line-height: 2;">   
+  <span class="close">&times;</span>
+  <center><h1> Track Your Order </h1></center> 
+  
+  <label for="track">Enter The Tracking Number:</label>
+    <input type="number" id="track" name="track" value="track">
+     <!--Form Action-->
+     <button type="submit"value="submit" style="background-color: rgb(227, 58, 160); color: rgb(236, 219, 219); width: 70px;">Search</button>
+  </form>
+</span>
+</div>
+</body>
+</html>

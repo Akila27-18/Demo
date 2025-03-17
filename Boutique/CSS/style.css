@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    color: black;
+    background-color:rgb(141, 235, 235) ;
+    height: 25px;
+    text-align: center;
+    padding: 10px;
+    justify-content: space-evenly;
+}
+.hero ul{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #f316b0;
+    text-align: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.hero ul li{
+    align-content: center;
+   }
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    list-style-type: none;
+    font-size: 10px;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    box-shadow: 5px 5px 5px gainsboro;
+    padding: 10px;
+  
+}
+.arrow {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display:inline-block;
+    padding: 5px;
+  }
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-weight: bolder; 
+    position: relative;
+}
+.Support-content{
+    display: none;
+    color: black;
+    position: absolute;
+    z-index: 10;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+.nav-links:hover .Support-content {
+   display: block;
+}
+.Look-Books-content{
+    display: none;
+    color: black;
+    position: absolute;
+    z-index: 10;
+    background: white;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+.nav-links:hover .Look-Books-content {
+    display: block;
+ }
+/* .Banner-Image a{
+  position: fixed;
+    top: 30px;
+    right: 40px;
+    font-size: 50px;
+    
+} */
+.Category a{
+  text-decoration: none;
+}
+.Category h1 {
+    display: flex;
+    flex-direction: row;
+  }
+ .Category h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: auto;
+  }
+  .Category h1:before {
+    margin-right: 10px
+  }
+  .Category h1:after {
+    margin-left: 10px
+  }
+  .Category h2{
+    padding: 30px;
+    color: #f316b0;
+  }
+  .card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px;
+    padding: 100px;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 2;
+    gap: 40px;
+  }
+  .box{
+    border-radius: 20px;
+
+  }
+  .Arrivals h1 {
+    display: flex;
+    flex-direction: row;
+  }
+ .Arrivals h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: auto;
+  }
+  .Arrivals h1:before {
+    margin-right: 10px
+  }
+  .Arrivals h1:after {
+    margin-left: 10px
+  }
+  .Arrivals button{
+    color: white;
+    width: 200px;
+    background-color:rgb(244, 33, 110); 
+    border: none;
+    padding: 10px; 
+    font-size: 25px; 
+    border-radius: 20px;
+  }
+  .Book button{
+    color: white;
+    width: 200px;
+    background-color:rgb(244, 33, 110);
+    border: none; 
+    padding: 10px; 
+    font-size: 25px; 
+    border-radius: 20px;
+  }
+  .Book button a{
+    text-decoration: none;
+    color: white;
+    background-color:rgb(244, 33, 110);
+  }
+  .Testimonial .card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 1;
+    gap:10px;
+  }
+  .Testimonial .box{
+    background-color: rgb(235, 206, 235);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 20px;
+    line-height: 1.5;
+  }
+  .Testimonial h1 {
+    display: flex;
+    flex-direction: row;
+  }
+ .Testimonial h1:before, h1:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid;
+    margin: auto;
+  }
+  .Testimonial h1:before {
+    margin-right: 10px
+  }
+  .Testimonial h1:after {
+    margin-left: 10px
+  }
+  #icons{
+    position:fixed;
+    bottom: 20px;
+    cursor: grab;
+    right: 20px;
+}
+footer .card{
+  background-color: #f316b0;
+  color: black; 
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: space-evenly;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+footer li{
+  list-style-type: none;
+}
+#Women h1 {
+  display: flex;
+  flex-direction: row;
+}
+#Women h1:before, h1:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid;
+  margin: auto;
+}
+#Women h1:before {
+  margin-right: 10px
+}
+#Women h1:after {
+  margin-left: 10px
+}
+#Contact-Us{
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  background-color: plum;
+  color: #f316b0;
+}
+#Contact-Us .card{
+  margin: 10px;
+  padding: 20px;
+  justify-content: space-around;
+  line-height:1; 
+}
+
+/* General Responsive Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Default styles (for larger screens) */
+
+/* Media Query for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .hero ul {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .hero li {
+      font-size: 24px;
+  }
+
+  .cart-container {
+      width: 90%;
+  }
+
+  .cart-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .cart-item img {
+      width: 80px;
+      height: auto;
+  }
+
+  .nav-links {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav-links li {
+      display: block;
+      padding: 10px 0;
+  }
+
+  .Category .card, 
+  .Arrivals .card, 
+  .Testimonial .card, 
+  .Book .card, 
+  footer .card {
+      
+      align-items: center;
+      grid-template-columns: repeat(2,1fr);
+  }
+
+  .box img {
+      width: 100%;
+      height: auto;
+  }
+
+  .box {
+      margin-bottom: 20px;
+  }
+}
+
+/* Media Query for Mobile Devices (480px and below) */
+@media screen and (max-width: 480px) {
+  header {
+      font-size: 14px;
+  }
+  .Category .card, 
+  .Arrivals .card, 
+  .Testimonial .card, 
+  .Book .card, 
+  footer .card {
+      
+      align-items: center;
+      grid-template-columns: 1fr;
+  }
+  .hero {
+      font-size: 18px;
+      padding: 10px;
+  }
+
+  .hero li {
+      font-size: 20px;
+  }
+
+  .cart-container {
+      width: 100%;
+      padding: 15px;
+  }
+
+  .cart-item img {
+      width: 60px;
+      height: auto;
+  }
+
+  .quantity-control button {
+      padding: 3px 8px;
+      font-size: 14px;
+  }
+
+  .quantity-control input {
+      width: 30px;
+      font-size: 14px;
+  }
+
+  .price {
+      font-size: 16px;
+  }
+
+  .buy-now {
+      font-size: 16px;
+      padding: 8px 16px;
+  }
+
+  .Category h1, .Arrivals h1, .Testimonial h1, .Book h1 {
+      font-size: 22px;
+  }
+
+  footer {
+      text-align: center;
+  }
+
+  footer .box {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  #icons {
+      text-align: center;
+  }
+
+  #icons i {
+      font-size: 40px;
+      margin: 5px;
+  }
+}
+
