@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #profile-list{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+          
+        }
+        .profile-card-details{
+             border: 2px solid darkblue;
+             background-color: whitesmoke;
+            width: 290px;
+            justify-items: center;
+            padding: 7px;
+            margin: 2px; 
+            color: darkblue;
+            font-style: italic;
+            font-size: 20px;
+        }
+   
+        .image{
+            width: 100px;
+            height: 100px;
+           
+        }
+        h1{
+            color:darkblue;
+            text-shadow: 2px 2px 2px lightskyblue;
+            text-align: center;
+            font-style: italic;
+            font-size: 50px;
+        }
+        h3{
+            color: darkred;
+            text-shadow: 2px 2px 2px pink;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px; 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>PROFILE CARD OF EMPLOYEE'S</h1>
+    <h3>Profile cards have become an essential component of modern web design, as they allow users to quickly access and understand key information about individuals or entities</h3>
+    <div id="profile-list">
+ 
+       
+    </div>
+    <script>
+        const profiles=[
+            {
+                id:"Emp.Id:50001",
+                name:"Emp.Name: Akila",
+                image:"image/female.jpeg",
+                price:"Salary: 50000",
+                desc:"PYTHON Full Stack Trainee",
+                btn:"Details",
+            },
+            {
+                id:"Emp.Id:50002",
+                name:"Emp.Name: Adhiran",
+                image:"image/male.jpeg",
+                price:"Salary: 70000",
+                desc:"PYTHON Full Stack Trainee",
+                btn:"Details",
+            },
+            {
+                id:"Emp.Id:50003",
+                name:"Emp.Name: Barath",
+                image:"image/male.jpeg",
+                price:"Salary: 60000",
+                desc:"Java Full Stack Trainee",
+                btn:"Details",
+            },
+            {
+                id:"Emp.Id:50004",
+                name:"Emp.Name: Jeev Krish",
+                image:"image/male.jpeg",
+                price:"Salary: 70000",
+                desc:"PYTHON Full Stack Trainee",
+                btn:"Details",
+            },
+            {
+                id:"Emp.Id:50005",
+                name:"Emp.Name: Sharmila",
+                image:"image/female.jpeg",
+                price:"Salary: 60000",
+                desc:"Java Full Stack Trainee",
+                btn:"Details",
+            },
+            {
+                id:"Emp.Id:50006",
+                name:"Emp.Name: Vaidyut",
+                image:"image/male.jpeg",
+                price:"Salary: 70000",
+                desc:"Djong Full Stack Trainee",
+                btn:"Details",
+            },
+            {
+                id:"Emp.Id:50007",
+                name:"Emp.Name:Tanuj",
+                image:"image/male.jpeg",
+                price:"Salary: 60000",
+                desc:"PYTHON Full Stack Trainee",
+                btn:"Details",
+            },
+            {
+                id:"Emp.Id:50008",
+                name:"Emp.Name: Hekshith",
+                image:"image/male.jpeg",
+                price:"Salary: 60000",
+                desc:"UI/UX Designer",
+                btn:"Details",
+            },
+ 
+        ];
+ 
+document.addEventListener("DOMContentLoaded",()=>{
+ 
+ 
+const profilecontainer=document.getElementById("profile-list");
+ 
+profiles.forEach(profile=>{
+ 
+ 
+    const profilecard=document.createElement("div");
+    profilecard.classList.add("profile-card-details");
+ 
+    profilecard.innerHTML=`
+    <h3>${profile.id}</h3>
+    <img src=${profile.image}>
+    <h2>${profile.name}</h2>
+    <h3>${profile.price}</h3>
+    <p>${profile.desc}</p>
+    <button>${profile.btn}</button>
+    `;
+    profilecontainer.appendChild(profilecard);
+});
+ 
+ 
+});
+ 
+ 
+ 
+    </script>
+</body>
+</html>
+ 
