@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #jewellery-list{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        .jewellery-card-details{
+             border: 2px solid red;
+            width: 290px;
+            justify-items: center;
+            padding: 7px;
+            margin: 2px; 
+            color: darkblue;
+            font-style: italic;
+            font-size: 20px;
+        }
+   
+        .image{
+            width: 100px;
+            height: 100px;
+        }
+        h1{
+            color: goldenrod;
+            text-shadow: 2px 2px 2px yellow;
+            text-align: center;
+            font-style: italic;
+            font-size: 50px;
+        }
+        h3{
+            color: darkred;
+            text-shadow: 2px 2px 2px darkgray;
+            text-align: center;
+            font-style: italic;
+            font-size: 25px; 
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>JEWELLERY CART</h1>
+    <h3>Unleash Your Inner Sparkle.Where Individuality Shines Bright.
+        Discover the Extraordinary in Every Detail.
+        Exquisite Jewelry for the Extraordinary You.
+        Ignite Your Style with Uncommon Brilliance</h3>
+    <div id="jewellery-list">
+        
+    </div>
+    <script>
+        const jewelleries=[
+            {
+                id:1,
+                name:"Necklace",
+                image:"image/necklace.jpeg",
+                price:339000,
+                desc:"I wondered if a necklace was first made of lace, embroider the neck and draw the eye upward toward the face.",
+                btn:"Add to cart",
+            },
+ 
+ 
+            {
+                id:2,
+                name:"Bangles",
+                image:"image/bangles.jpeg",
+                price:230000,
+                desc:"Our love of nature, of divine creation and our sense of wonder was told in our bangle art.",
+                btn:"Add to cart",
+            },
+ 
+ 
+            {
+                id:3,
+                name:"Chains",
+                image:"image/chain.jpeg",
+                price:150000,
+                desc:"A gold chain is a piece of jewelry made of gold that we wear around the neck.",
+                btn:"Add to cart",
+
+            },
+ 
+ 
+            {
+                id:4,
+                name:"Earrings",
+                image:"image/earrings.jpeg",
+                price:50000,
+                desc:"Sophistication Meets Style in Our Classy Earring Collection",
+                btn:"Add to cart",   
+            },
+ 
+        ];
+ 
+document.addEventListener("DOMContentLoaded",()=>{
+ 
+ 
+const jewellerycontainer=document.getElementById("jewellery-list");
+ 
+jewelleries.forEach(jewellery=>{
+ 
+ 
+    const jewellerycard=document.createElement("div");
+    jewellerycard.classList.add("jewellery-card-details");
+ 
+    jewellerycard.innerHTML=`
+   
+    <img src=${jewellery.image}>
+    <h2>${jewellery.name}</h2>
+    <h3>${jewellery.price}</h3>
+    <p>${jewellery.desc}</p>
+    <button>${jewellery.btn}</button>
+    `;
+    jewellerycontainer.appendChild(jewellerycard);
+});
+ 
+ 
+});
+ 
+ 
+ 
+    </script>
+</body>
+</html>
+ 
