@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet World</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="image/logo.jpg" width="75px" height="75px"><span>Pet <span style="color: orange;">World</span></span></div>
+        <input type="text" placeholder="Search for Products &#128269;">
+        <input type="text" placeholder=" 📍Enter Pincode to check Delivery Date">
+        <div class="icon"><i class='bx bx-phone' style='color:#e25912'  ></i><i class='bx bxs-user' style='color:#ea5c15'  ></i><i class='bx bx-cart' style='color:#ec5d15'  ></i>
+            
+        </div>
+    </header>
+    <script>
+        function togglebar(){
+            document.querySelector('.menu').classList.toggle('btn')
+        }
+    </script>
+    <nav>
+        <div class="menu-container">
+            <span class="toggle-btn" onclick="togglebar()">&#9776;</span>
+        <ul class="menu">
+            <li>Dogs ▼
+                <div class="mega-menu">
+                    <ul>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>Cats ▼
+                <div class="mega-menu">
+                    <ul>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>Birds ▼
+                <div class="mega-menu">
+                    <ul>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>Fish ▼
+                <div class="mega-menu">
+                    <ul>
+                        <li><a href="#">Food</a></li>
+                        <li><a href="#">Grooming</a></li>
+                        <li><a href="#">Health</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-image">
+            <img src="image/bannernew.png">  
+        </div>
+    </section>
+    
+    <section class="offers">
+        
+        <div class="offer-box">Flat 10% off on your First Order | Use Code: <strong>FIRSTPET</strong></div>
+        <div class="offer-box">Get Assured Free Gifts On First Order</div>
+    </section>
+    <section class="discounts">
+        <h2>Find All At Pet <span style="color: #e25912;"> World</span></h2>
+        <div class="brands">
+            <div class="brand"><div class="circle"><img src="image/Royal-Canin-Logo-768x480.jpg"></div><div class="discount-badge">Up to 25% OFF</div></div>
+            <div class="brand"><div class="circle"><img src="image/Pedigree-logo-768x432.png"></div><div class="discount-badge">Up to 10% OFF</div> </div>
+            <div class="brand"><div class="circle"><img src="image/farmina.png"></div><div class="discount-badge">Up to 20% OFF</div> </div>
+            <div class="brand"><div class="circle"><img src="image/sheba.png"></div><div class="discount-badge">Up to 5% OFF</div> </div>
+            <div class="brand"><div class="circle"><img src="image/meowmix.png"></div><div class="discount-badge">Up to 50% OFF</div> </div>
+        </div>
+    </section>
+    
+    <section class="categories">
+        <h2>Popular Categories</h2>
+        <div class="category-list">
+            <div class="category"><div><h3>Dog Food</h3><h4>Up to 50% off</h4><img src="image/Screenshot 2025-03-30 162027.png"></div></div>
+            <div class="category"><div><h3>Pharmacy</h3> <h4>Up to 12% off</h4><img src="image/Screenshot 2025-03-30 162103.png"> </div></div>
+            <div class="category"><div><h3>Grooming</h3> <h4>Up to 50% off</h4><img src="image/grooming.png"> </div></div>
+            <div class="category"><div><h3>Clothing</h3> <h4>Up to 60% off</h4><img src="image/gloves.png"> </div></div>
+            <div class="category"><div><h3>Toys</h3> <h4>Up to 25% off</h4><img src="image/toys.png"> </div></div>
+            <div class="category"><div><h3>Cat Food</h3> <h4>Up to 12% off</h4><img src="image/catfood.png"> </div></div>
+            <div class="category"><div><h3>Litter Supply</h3> <h4>Up to 12% off</h4><img src="image/littersupply.png"> </div></div>
+            <div class="category"><div><h3>Treats</h3> <h4>Up to 12% off</h4><img src="image/treats.png"> </div></div>
+            <div class="category"><div><h3>Bed</h3> <h4>Up to 12% off</h4><img src="image/bed.png"> </div></div>
+            <div class="category"><div><h3>Belt</h3> <h4>Up to 12% off</h4><img src="image/belt.png"> </div></div>
+
+        </div>
+    </section>
+    <section class="pets">
+        <h2>Explore by Pets</h2>
+        <div class="pet-list">
+            <div class="pet"><div class="rectangle"><img src="image/dog.png"></div><div class="pet-badge">Dog</div></div>
+            <div class="pet"><div class="rectangle"><img src="image/cat.png"></div><div class="pet-badge">Cat</div></div>
+            <div class="pet"><div class="rectangle"><img src="image/bird.png"></div><div class="pet-badge">Bird</div></div>
+            <div class="pet"><div class="rectangle"><img src="image/fish.png"></div><div class="pet-badge">Fish</div></div>
+            <div class="pet"><div class="rectangle"><img src="image/rabbit.png"></div><div class="pet-badge">Rabbit</div></div>        
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section logo">
+                <div class="logo"><img src="image/logo.jpg" width="100px" height="100px"><span>Pet <span style="color: orange;">World</span></span></div>
+                <p>© 2025 Pet World. All rights reserved.</p>
+                <p>.Privacy policy .Terms .Sitemap</p>
+            </div>
+    
+            <div class="footer-section shop">
+                <h3>Shop Now</h3>
+                <ul>
+                    <li>➜ <a href="#">Dogs</a></li>
+                    <li>➜ <a href="#">Cats</a></li>
+                    <li>➜ <a href="#">Birds</a></li>
+                    <li>➜ <a href="#">Fish</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section shopping">
+                <h3>Online Shopping</h3>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section contact">
+                <p>📞 +91 12367 53490</p>
+                <p>📍 45 Cross Street, Mumbai</p>
+                <p>📧 pet.world@gmail.com</p>
+                <p>⏰ Timing: 10 AM – 5 PM</p>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

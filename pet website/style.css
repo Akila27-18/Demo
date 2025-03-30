@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+header .icon{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    /* justify-content: space-around; */
+    font-size: 30px;
+
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+input{
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: darkcyan;
+    padding: 10px 20px;
+    /* align-items: center; */
+    
+}
+nav ul{
+    align-content: flex-end;
+   
+}
+nav ul li{
+    color: white;
+    font-style: italic;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    color: white;
+}
+.menu > li{
+    left: 1000px;
+    padding: 15px 20px;
+    position: relative;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+.mega-menu{
+    width: 100px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.menu li:hover .mega-menu{
+    display: block;
+}
+.mega-menu ul{
+    list-style: none;
+    background-color: white;    
+}
+.mega-menu ul li {
+    border-bottom: 1px solid grey;
+}
+.toggle-btn{
+    display: none;
+}
+@media(max-width:768px){
+    nav{
+        flex-direction: row;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+    }
+    .toggle-btn{
+        display: block;
+    }
+}
+.menu.btn{
+    display: flex;
+}
+.hero .hero-image img{
+    width: 100%;
+  }
+
+.offers{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: #1f2d30;
+    border: 5px solid white;
+    color: white;
+    padding: 15px 0;
+}
+.offer-box {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.discounts .brands .brand img{
+    width: 150px;
+    height: 150px;
+    border: 1px solid orangered;
+    /* position: absolute; */
+   
+  
+    background: white;
+    /* padding: 20px; */
+    border-radius: 50%;
+    
+}
+.discounts h2{
+    margin: 5px;
+    padding: 10px;
+}
+
+
+.brands {
+    padding: 70px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: space-around;
+    position: relative;
+    /* width: 150px; */
+    /* margin: 20px auto; */
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    /* border: 2px solid orange; */
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    /* bottom: 150px; */
+    top: -20px;
+}
+
+.circle img {
+    width: 80px;
+}
+
+.discount-badge {
+    width: 130px;
+    height: 50px;
+    text-align: center;
+     background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    position:relative;
+    /* bottom:px; */
+    top: 30px;
+}
+ .category{  
+    gap: 25px;
+    width: 170px;
+    height: 200px;
+    border: 1px solid green;
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+.category-list{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin: 20px;
+   padding: 20px;
+   
+}
+.categories, .pets{
+    margin: 30px;
+    padding: 30px;
+}
+
+.pet-list{
+   display: grid;
+   grid-template-columns: repeat(5,1fr);
+}
+.pet{
+    width: 170px;
+    height: 260px;
+}
+.pet .pet-badge{
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+}
+.categories, .pets h2{
+    padding: 10px;
+    margin: 10px;
+}
+footer {
+    background-color: #2C4A52;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+    background-color: #2C4A52;
+}
+
+.logo h2 {
+    font-size: 22px;
+    color: #FF935C;
+}
+
+.footer-section h3 {
+    color: #FF935C;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    /* border: 1px solid gray; */
+    box-shadow: 2px 2px 2px white;
+    gap: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.product-card {
+    
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 275px;
+    /* height: 200px; */
+    padding: 20px;
+    text-align: center;
+}
+
+.offer {
+    background-color: #3e6d74;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.rating {
+    font-size: 1.2em;
+    color: #ffa500;
+}
+
+.product-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.price {
+    margin: 10px 0;
+}
+
+.current-price {
+    font-size: 1.4em;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.discount {
+    background-color:#75a7b6;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.weights {
+    margin: 10px 0;
+}
+
+.weights button {
+    margin: 5px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weights button:hover {
+    background-color: #1976D2;
+}
+
+.add-to-cart {
+    padding: 10px;
+    border: none;
+    background-color:#557d66;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.add-to-cart:hover {
+    background-color: #388E3C;
+}
+
+
+
+
