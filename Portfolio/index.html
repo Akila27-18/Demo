@@ -11,62 +11,67 @@
 </head>
 <body>
     <div class="sidebar">
-        <img src="image/profilepic.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="image/new.png" alt="Profile Picture" class="profile-pic">
         <nav>
         <ul>
-            <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#skills"><i class="fas fa-chart-line"></i> Skills</a></li>
-            <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
+            <li><a href="#about"><i class="fas fa-user" style="color: #fa16b3;"> About</i></a></li>
+            <li><a href="#skills"><i class="fas fa-chart-line"style="color: #68c91a;">Skills</i> </a></li>
+            <li><a href="#projects"><i class="fas fa-laptop-code"style="color: aqua;"> Projects</i></a></li>
         </ul>
         </nav>
         <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2 data-aos="fade-up">Let's Connect:</h2>
+            <h2 data-aos="fade-up" style="color:lightcoral;">Let's Connect:</h2>
             <p> If you'd like to collaborate or discuss opportunities, feel free to reach out:</p>
             <br>
-            <h6><i class='bx bxs-phone' style="color: orangered; font-size: 30px;"></i><b>Phone:</b> +91-9876543210</h6>
-    <h6><i class='bx bx-envelope' style="color: blueviolet;font-size: 30px;"  ></i><b>Email:</b> akila271819@gmail.com</h6>
-    <h6><img src="Image/addr.png" width="30"><b>Address:</b>Thiruvottiyur, Chennai</h6>
+            <h6><i class='bx bxs-phone-call bx-spin' style="color:#68c91a; font-size: 40px;" ></i><b>Phone:</b> +91-9876543210</h6>
+    <h6><i class='bx bxs-envelope bx-tada' style="color:#221ac9;font-size: 40px;" ></i><b>Email:</b> akila271819@gmail.com</h6>
+    <h6><i class='bx bx-location-plus bx-flashing' style="color:#fa16b3;font-size: 40px;" ></i><b>Address:</b> Chennai,Tamilnadu,In</h6>
         </div>
     </section>
     </div>
     <div class="content">
-    <header>
-        <h1 class="title">Akila's Portfolio</h1>
-    </header>
+        <div class="typed-out">
+            <header>
+        <h1 class="title typed-out" style="color: #fa16b3;font-style: italic; font-weight: bolder; font-size: 50px;">Akila's Portfolio</h1>
+</header>
+
+    </div>
     
     <section id="about" class="about">
-        <h2 style="text-align: center;"><i class="fas fa-user"></i> Innovative Python Developer</h2>
-        <p>Fresher Python Developer with strong foundation in HTML and CSS. Completed Java Script projects demonstrating proficiency in Python. Achieved writing clean and efficient code during internship at Vetri Technology Solutions, resulting in Innovative Python Developer with Machine Learning Expertise. Eager to apply problem-solving skills and passion for clean, efficient code to contribute to innovative software solutions and accelerate product development.</p>
+        <h2 style="text-align: center; color: skyblue; font-style: italic; font-size: 40px;"><i class="fas fa-user"></i> Innovative Python Developer</h2>
+        <p style="font-style: italic; color: pink;">Fresher Python Developer with strong foundation in HTML and CSS. Completed Java Script projects demonstrating proficiency in Python. Achieved writing clean and efficient code during internship at Vetri Technology Solutions, resulting in Innovative Python Developer with Machine Learning Expertise. Eager to apply problem-solving skills and passion for clean, efficient code to contribute to innovative software solutions and accelerate product development.</p>
     </section>
-    
-    <section id="skills" class="skills">
-        <h2 style="text-align: center;"><i class="fas fa-chart-line"></i>Skills & Competencies</h2>
-        <div class="skill">
-            <div class="circle" style="--percent: 20;"><span>Python</span></div>
+
+    <section id="skills" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-chart-line"></i> Skills</h2>
+        <div class="skills">
+          <div class="skill-bar"><span>Python</span><div class="bar" style="width: 80%;"></div></div>
+          <div class="skill-bar"><span>JavaScript</span><div class="bar" style="width: 90%;"></div></div>
+          <div class="skill-bar"><span>HTML</span><div class="bar" style="width: 90%;"></div></div>
+          <div class="skill-bar"><span>CSS</span><div class="bar" style="width: 90%;"></div></div>
+          <div class="skill-bar"><span>Django</span><div class="bar" style="width: 10%;"></div></div>
+          <div class="skill-bar"><span>SQL</span><div class="bar" style="width: 5%;"></div></div>
         </div>
-        <div class="skill">
-            <div class="circle" style="--percent: 15;"><span>JavaScript</span></div>
-        </div>
-        <div class="skill">
-            <div class="circle" style="--percent: 90;"><span>HTML & CSS</span></div>
-        </div>
-    </section>
-    
+      </section>
+    <h2 style="text-align: center; color: #221ac9; font-size: 30px; font-style: italic;"><i class="fas fa-laptop-code"></i>Portfolio Pieces</h2>
     <section id="projects" class="projects">
-        <h2><i class="fas fa-laptop-code"></i>Portfolio Pieces</h2>
-        <div class="project-card"><i class="fas fa-code"></i><h3>Project 1: E-Commerce Website</h3>
-            <img src="image/ecom.webp" width="100px" height="100px" style="border-radius: 20px;">
+        
+        <div class="project-card"><i class="fas fa-code"></i><h3 style="color: #fa16b3; font-size: 25px;">Project 1:<br> Lotus Boutique Website</h3>
+            <img src="image/LB-logo.jpeg" width="100px" height="100px" style="border-radius: 20px;">
             <p>A modern website designed for a tech startup, focusing on simplicity and boldness.</p>
+            <button onclick="openWebsite1()">Click Here</button>
         </div>
-        <div class="project-card"><i class="fas fa-database"></i><h3>Project 2: Website Redesign</h3>
-            <img src="image/web.webp" width="100px" height="100px" style="border-radius: 20px;">
+        <div class="project-card"><i class="fas fa-database"></i><h3 style="color: blueviolet; font-size: 25px;">Project 2:<br> Health and Nutrition Website</h3>
+            <img src="image/vegan-meat plan.png" width="100px" height="100px" style="border-radius: 20px;">
             <p>A complete website redesign to enhance the user experience and modernize the look.</p>
+            <button onclick="openWebsite2()">Click Here</button>
         </div>
-        <div class="project-card"><i class="fas fa-mobile-alt"></i><h3>Project 3: Mobile App UI</h3>
-            <img src="image/mob.webp" width="100px" height="100px" style="border-radius: 20px;">
-            <p>Redesigned the user interface for a mobile app, improving usability and aesthetics.</p>
+        <div class="project-card"><i class="fas fa-database"></i><h3 style="color: greenyellow; font-size: 25px;">Project 3:<br>Organic Farming Website</h3>
+            <img src="image/12 (31).png" width="100px" height="100px" style="border-radius: 20px;">
+            <p>A complete website redesign to enhance the user experience and modernize the look.</p>
+            <button onclick="openWebsite3()">Click Here</button>
         </div>
     </section>
     <section id="icons">
@@ -76,9 +81,38 @@
         <br>
         <i class='bx bxl-twitter' style="color:blue;font-size: 50px;"></i>
         <br>
-        <i class='bx bxl-whatsapp' style="color: darkgreen; font-size: 50px;"></i>
+        <i class='bx bxl-whatsapp' style="color: greenyellow; font-size: 50px;"></i>
     </section>
      </div>
+     <script>
+        function openWebsite1() {
+          window.open("https://akila27-18.github.io/Lotus-Boutique/", "_blank"); // Opens in a new tab
+        }
+        function openWebsite2() {
+          window.open("https://akila27-18.github.io/Nutrition/", "_blank"); // Opens in a new tab
+        }
+        function openWebsite3() {
+          window.open("https://akila27-18.github.io/OrganicFarming/", "_blank"); // Opens in a new tab
+        }
+        // Add this JS snippet
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.project-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animation = 'popIn 1s ease forwards';
+      }
+    });
+  }, { threshold: 0.3 });
+
+  cards.forEach(card => {
+    card.style.opacity = 0;
+    observer.observe(card);
+  });
+});
+
+      </script>
 </body>
 </html>
 
